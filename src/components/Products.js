@@ -20,7 +20,7 @@ const Products = () => {
 
   const loadProducts = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/products');
+      const response = await axios.get('https://shop-easy-backend-v9le.onrender.com/api/products');
       setProducts(response.data);
       
       // Extract unique categories
