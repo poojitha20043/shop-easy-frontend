@@ -46,7 +46,7 @@ const Register = () => {
     
     try {
       // ✅ FIXED: Changed port from 5000 to 5001
-      const response = await axios.post('http://localhost:5001/api/register', {
+      const response = await axios.post('https://shop-easy-backend-v9le.onrender.com/api/register', {
         name: formData.name,
         email: formData.email,
         password: formData.password
