@@ -32,7 +32,7 @@ const Login = () => {
     setMessage('');
     
     try {
-      const response = await axios.post('http://localhost:5001/api/login', formData);
+      const response = await axios.post('https://shop-easy-backend-v9le.onrender.com/api/login', formData);
       
       if (response.data.success) {
         setMessage('Login successful! Redirecting...');
